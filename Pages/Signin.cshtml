@@ -1,0 +1,132 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@* <!DOCTYPE html> *@
+@* <html lang="en"> *@
+@* <head> *@
+@*     <meta charset="UTF-8"> *@
+@*     <meta name="viewport" content="width=device-width, initial-scale=1.0"> *@
+@*     <link rel="stylesheet" href="Pages/Shared/_Layout.cshtml.css"/> *@
+@*     <title>Home</title> *@
+@* </head> *@
+@* <body> *@
+@* <h1>Sign in</h1> *@
+@* <form method="post" class="align-content-sm-center"> *@
+@*     <input type="text" name="Name" id="fullname" placeholder="Enter your name"> *@
+@*     <label for="fullname">Name</label> *@
+@*     <br> *@
+@*     <input type="number" min="13" max="100" id="age"> *@
+@*     <label for="age">Age</label> *@
+@*     <br> *@
+@*     <input type="email" name="email" id="Email" placeholder="Enter your email"> *@
+@*     <label for="Email">Email</label> *@
+@*     <br> *@
+@*     <input type="number" $1$min="11" max="11"#1# id="N_ID"> *@
+@*     <label for="N_ID">National ID</label> *@
+@*     <br> *@
+@*     <label>choose category</label> *@
+@*     <select class="dropdown" > *@
+@*         <option name="category">Patient</option> *@
+@*         <option name="category">Dentist</option> *@
+@*         <option name="category">Reception</option> *@
+@*         <option name="category">Nurse</option> *@
+@*         <option name="category">Intern</option> *@
+@*         <option name="category">Administrator</option> *@
+@*     </select> *@
+@*     <br> *@
+@*     <button type="submit" class="btn-primary">Submit</button> *@
+@* </form> *@
+@* </body> *@
+@* </html> *@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Main</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/Pages/Shared/_Layout.cshtml.css"/>
+</head>
+<body>
+
+<div class="container" style="justify-content:center" >
+    
+  <form class="well form-horizontal align-content-center" method="post"  id="contact_form">
+    <fieldset>
+    
+    
+      <!-- Form Name -->
+      <legend>Register</legend>
+    
+      <!-- Text input-->
+    
+      <div class="form-group">
+        <label class="col-md-4 control-label">Name</label>  
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  placeholder="Name" class="form-control"  type="text" asp-for="@Model.name">
+          </div>
+        </div>
+      </div>
+    
+      <!-- Text input-->
+    
+      <div class="form-group">
+        <label class="col-md-4 control-label" >Age</label> 
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  placeholder="Age" class="form-control"  type="number" asp-for="@Model.age">
+          </div>
+        </div>
+      </div>
+    
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>  
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input placeholder="ex:Username@gmail.com" class="form-control"  type="email" asp-for="@Model.Email">
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label" >National ID</label>  
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  placeholder="National ID" class="form-control"  type="number" asp-for="@Model.nationalID">
+          </div>
+        </div>
+      </div>
+    
+    
+      <!-- Text input-->
+  
+      <div class="form-group">
+        <label class="col-md-4 control-label">Password</label>  
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input  placeholder="Password" class="form-control" type="password" asp-for="@Model.password">
+          </div>
+        </div>
+      </div>
+      
+      <label>Please Choose your Category</label>
+      <button  class="btn-default" asp-route-category=1>Patient</button>
+      <button class="btn-default" asp-route-category=2 >Dentist</button>
+      <button  class="btn-default" asp-route-category=3 >Receptionist</button>
+      <button  class="btn-default" asp-route-category=4>Nurse</button>
+      <button  class="btn-default" asp-route-category=5>Admin</button>
+      <button class="btn-default" asp-route-category=6>Intern</button>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
+    

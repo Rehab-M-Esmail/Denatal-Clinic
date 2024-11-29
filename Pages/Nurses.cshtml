@@ -1,0 +1,94 @@
+@page
+@model dental_clinic.Pages.Nurses
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Nurses";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nurses</title>
+</head>
+<body>
+<style>
+    body {
+        background: linear-gradient(to bottom right, #ADD8E6, white);
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1220px;
+        background-color: white;
+        padding: 45px;
+        border-radius: 55px;
+        margin-top: 30px;
+    }
+
+    table {
+        font-family: 'Calibri', sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    th {
+        background: linear-gradient(to bottom right, #90EE90, #87CEEB);
+        border-radius: 10px 10px 0 0;
+    }
+
+    td {
+        border-radius: 0 0 10px 10px;
+    }
+     h2 {
+        font-family: 'Sofia Pro', sans-serif;
+    }
+</style>
+
+<div class="container">
+    <h2>Nurse Information</h2>
+
+    <div class="row">
+        <div class="col-md-6 info-column">
+            <p><strong>Name:</strong> @Model.nurse.Name</p>
+            <p><strong>Phone Number:</strong> @Model.nurse.PhoneNumber</p>
+        </div>
+
+
+    </div>
+
+
+    <h2>Treatment Records</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Treatment</th>
+            <th>Treatment Time</th>
+            <th>Procedure Material</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var record in Model.TreatmentRecords)
+        {
+            <tr>
+                <td>@record.Treatment</td>
+                <td>@record.TreatmentTime</td>
+                <td>@record.ProcedureMaterial</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@page
+@model dental_clinic.Pages.Intern
+@{
+    ViewData["Title"] = "Intern Request";
+}
+<style>
+    body {
+        background: linear-gradient(to bottom right, lightblue, white);
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1200px;
+          max-height: 1500px;
+        background-color: white;
+        padding: 45px;
+        border-radius: 15px;
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px; 
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-family: 'Arial Black', sans-serif;
+        font-weight: bold;
+    }
+</style>
+
+<div class="container">
+    <div>
+        <div class="form-group"> 
+            <h2>Internship Request</h2>
+            <div class="row">
+                <div class="col-md-6 info-column">
+                    <p><strong>Name:</strong> @Model.Name</p>
+                    <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+                    <p><strong>National ID:</strong> @Model.NationalID</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="form-group">
+            <label for="doctor">Select Dentist:</label>
+            <select id="doctor" name="SelectedDoctor" class="form-control" required>
+                <option value="Dr. John Doe">Dr. Ali Mahmoud</option>
+                <option value="Dr. adam smith">Dr. Farida Ahmed</option>
+                <option value="Dr. yasmine ahmed">Dr. Yasmine ahmed</option>
+                <option value="Dr. yasmine ahmed">Dr. Basmala amr</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="practiceField">Practice Field:</label>
+            <select id="practice" name="SelectedPracticeField" class="form-control" required>
+                <option value="General Dentist">General Dentist</option>
+                <option value="Oral Surgeon">Oral Surgeon</option>
+                <option value="Prosthodontist">Prosthodontist</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Request</button>
+    </div>
+</div>

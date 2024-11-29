@@ -1,0 +1,37 @@
+@page
+@model dental_clinic.Pages.patient_main
+
+@{
+    Layout = "Shared/_Layout";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Patient main</title>
+    <link rel="stylesheet" href="/Shared/_Layout.cshtml.css"/>
+</head>
+<body class="form-group" style="background-color: #fcf8e3">
+<div class="container">
+    <div class="row">
+        <div class="card col" style="width: 18rem;">
+            <img src="images/download.png" class="card-img-top" alt="teeth">
+            <div class="card-body">
+                <a href="/Instructions">
+                    <p class="card-text">for strong and healthy teeth</p></a>
+            </div>
+        </div>
+        <div class="col">
+            <form method="post" >
+                <fieldset>
+                   <legend>Book an appointment</legend>
+                        <button >Book</button>
+                </fieldset>
+                
+            </form>
+            </div>
+        </div>
+</div>
+</body>
+</html>

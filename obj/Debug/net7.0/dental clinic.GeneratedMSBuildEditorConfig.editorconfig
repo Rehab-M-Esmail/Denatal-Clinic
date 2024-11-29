@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = dental_clinic
+build_property.RootNamespace = dental_clinic
+build_property.ProjectDir = /Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Appointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/completeInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvY29tcGxldGVJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/DenstistProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVuc3Rpc3RQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Dentist main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVudGlzdCBtYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Doctors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRG9jdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Forgetpass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRm9yZ2V0cGFzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Info page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5mbyBwYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Instructions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5zdHJ1Y3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Intern.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW50ZXJuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Nurses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTnVyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/patient main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvcGF0aWVudCBtYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Reception main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjZXB0aW9uIG1haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Reception.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVjZXB0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/result page.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvcmVzdWx0IHBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/ShowServices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hvd1NlcnZpY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Signin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lnbmluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/temp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvdGVtcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rehabmahmoud/RiderProjects/dental clinic/dental clinic/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ja7ho30f6g

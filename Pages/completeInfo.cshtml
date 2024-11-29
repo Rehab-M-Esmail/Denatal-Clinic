@@ -1,0 +1,60 @@
+@page
+@model dental_clinic.Pages.completeInfo
+
+@{
+    Layout = "Shared/_Layout";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Complete Registration</title>
+</head>
+<body style="background-color: #dde5f4" class="justify-content-center align-content-center">
+<h3>Please Complete Registration</h3>
+<div class="well form-horizontal align-content-center">
+    <form class="well form-horizontal align-content-center" method="post" id="contact_form">
+        <div class="form-group">
+            <label class="col-md-4 control-label">City</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input placeholder="City" class="form-control" type="text" asp-for="@Model.city">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Street</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input  placeholder="street" class="form-control" type="text" asp-for="@Model.street">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Gender</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input placeholder="gender" class="form-control" type="text" asp-for="@Model.gender">
+                </div>
+            </div>
+        </div>
+                 
+      <div class="form-group">
+        <label class="col-md-4 control-label">Phone #</label>  
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input  placeholder="(845)555-1212" class="form-control" type="number" asp-for="@Model.phone">
+          </div>
+        </div>
+      </div>
+        <button type="submit">Submit</button>
+        
+    </form>
+</div>
+</body>
+</html>
