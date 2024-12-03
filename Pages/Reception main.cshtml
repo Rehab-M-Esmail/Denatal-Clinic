@@ -1,0 +1,74 @@
+@page
+@model dental_clinic.Pages.Reception_main
+
+@{
+    Layout = null;
+}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dental Clinic Reception</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f8ff;
+                color: #333;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+
+            .action-button {
+                display: inline-block;
+                padding: 15px 30px;
+                font-size: 18px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            .schedule-button, .stock-button {
+                background-color: #87ceeb;
+                color: #fff;
+            }
+
+            .action-button:hover {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Welcome to Our Dental Clinic</h1>
+        <p>Take care of your oral health with us!</p>
+        <div class="button-container">
+            <a href="/schedule" class="btn btn-primary action-button schedule-button">Schedule an Appointment</a>
+            <a href="/stock" class="btn btn-primary action-button stock-button">Check Stock</a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+
+}

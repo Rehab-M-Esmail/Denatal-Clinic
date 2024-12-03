@@ -1,0 +1,69 @@
+@page
+@model dental_clinic.Pages.DentistProfileModel
+@{
+    ViewData["Title"] = "Dentist Profile";
+}
+
+<style>
+    body {
+        background: linear-gradient(to bottom right, lightblue, lightcyan);
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1220px;
+        background-color: white;
+        padding: 45px;
+        border-radius: 55px;
+        margin-top: 30px;
+    }
+
+    .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-fluid {
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        border-left: 1px solid #ccc;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .profile-info p {
+        margin: 10px 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px; 
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.DentistProfile.pictureurl" alt="@Model.DentistProfile.name" class="img-fluid">
+        </div>
+        <div class="col-md-6 profile-info">
+            <p><strong>name:</strong>@Model.DentistProfile.name</p>
+            <p><strong>national id:</strong> @Model.DentistProfile.nationalid</p>
+            <p><strong>phone number:</strong> @Model.DentistProfile.phonenumber</p>
+            <p><strong>specialization:</strong> @Model.DentistProfile.specialization</p>
+            <p><strong>email:</strong> @Model.DentistProfile.email</p>
+            <p><strong>age:</strong> @Model.DentistProfile.age</p>
+            <p><strong>id:</strong>@Model.DentistProfile.id</p>
+
+           
+            <a href="/DentistSchedule" class="btn btn-primary">show schedule</a>
+        </div>
+    </div>
+</div>>

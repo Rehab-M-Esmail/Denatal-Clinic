@@ -1,0 +1,79 @@
+@page
+@model dental_clinic.Pages.Dentist_main
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Dentist main</title>
+<style>
+    body {
+        background: linear-gradient(to bottom right, #87CEFA, #ffffff);
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid white;
+        border-radius: 9px;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        font-family: 'Roboto', sans-serif;
+        color: #333; /* Darker text color on light background */
+        font-size: 20px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        color: #333; /* Darker text color on light background */
+        font-size: 36px;
+    }
+</style>
+</head>
+
+<div class="container">
+    <h2>Dentist Schedule</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Hour</th>
+                <th>Session Type</th>
+                <th>Previous Appointments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Add your schedule data here -->
+            <tr>
+                <td>John Doe</td>
+                <td>10:00 AM</td>
+                <td>Regular Checkup</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>02:30 PM</td>
+                <td>Dental Cleaning</td>
+                <td>Yes, 1</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>

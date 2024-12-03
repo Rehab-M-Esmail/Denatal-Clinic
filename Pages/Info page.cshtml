@@ -1,0 +1,80 @@
+@page
+@model dental_clinic.Pages.InfoPage
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>User Information</title>
+</head>
+<body>
+<div>
+    <div class="justify-content-center row">
+        <div class="card col">
+            <img src="images/user icon.png" alt="Icon" sizes="(max-width: 400px) 50px, 50vw"/>
+        </div>
+        <div class=" card col">
+            <h1>User information</h1>
+            <h4>Name: @Model.dt.Rows[0][0] <button asp-route-id="1"><input type="text" asp-for="newname" asp-page-handler="NameEdit"/>Edit</button></h4>
+            <h4>Email : @Model.dt.Rows[0][3] <button asp-route-id="2"><input type="email" asp-for="newEmail"/>Edit</button></h4>
+            <h4>National ID: @Model.dt.Rows[0][2] </h4>
+            <h4>Age: @Model.dt.Rows[0][1] <button asp-route-id="3"><input type="number" asp-for="newAge"/>Edit</button></h4>
+            <h4>Gender:@Model.dt2.Rows[0][0]</h4>
+            <h4>Phone number: + @Model.dt4.Rows[0][0] </h4>
+            <h4>Patient ID: @Model.id</h4>
+            <h4>Address: @Model.dt2.Rows[0][1]- @Model.dt2.Rows[0][2]</h4>
+            
+        </div>
+        <label><strong>Appointments History</strong></label>
+        <table class="table ">
+            <thead>
+            <tr>
+                <th>Dentist ID</th>
+                <th>Date</th>
+                <th>Hour</th>
+                <th>Payment</th>
+                <th>Rating</th>
+                <th>Review</th>
+            </tr>
+            </thead>
+            <tbody>
+            @for (var i = 0; i < @Model.dt3.Rows.Count; i++)
+            {
+                    <tr>
+                        @for (var j = 0; j < @Model.dt3.Columns.Count; j++)
+                        {
+                            if (@Model.dt3.Rows[0][4] == null)
+                            {
+                                <td><input type="range"/></td>
+                            }
+                            else
+                            {
+                                if (@Model.dt3.Rows[0][5] == null)
+                                {
+                                    <td>
+                                        <textarea asp-for="review" rows="5" cols="10"> Enter A review</textarea>
+                                        <button asp type="reset" asp-page-handler="Review">Submit</button>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>@Model.dt3.Rows[i][j]</td>
+                                }
+                            }
+
+                        }
+                    </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>
